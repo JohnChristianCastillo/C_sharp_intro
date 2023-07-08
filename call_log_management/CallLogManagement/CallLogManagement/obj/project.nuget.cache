@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "HzpnAM+R8UTA0Ff/GX6tE+1PRNOIT9qZbJCLhjTeBvo6gOBmk4nd3hG99GPTcLTz2HccbSklkSNz2ZydeL3biA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\yanok\\Desktop\\C_sharp_intro\\call_log_management\\CallLogManagement\\CallLogManagement\\CallLogManagement.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yanok\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.19\\microsoft.windowsdesktop.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\yanok\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.19\\microsoft.netcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\yanok\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.19\\microsoft.aspnetcore.app.ref.6.0.19.nupkg.sha512",
+    "C:\\Users\\yanok\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.19\\microsoft.netcore.app.host.win-x64.6.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}

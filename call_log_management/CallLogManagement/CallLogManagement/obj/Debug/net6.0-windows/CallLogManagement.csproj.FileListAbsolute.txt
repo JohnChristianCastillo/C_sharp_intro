@@ -1,0 +1,17 @@
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\bin\Debug\net6.0-windows\CallLogManagement.exe
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\bin\Debug\net6.0-windows\CallLogManagement.deps.json
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\bin\Debug\net6.0-windows\CallLogManagement.runtimeconfig.json
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\bin\Debug\net6.0-windows\CallLogManagement.dll
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\bin\Debug\net6.0-windows\CallLogManagement.pdb
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.csproj.AssemblyReference.cache
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.Form1.resources
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.csproj.GenerateResource.cache
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.AssemblyInfoInputs.cache
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.AssemblyInfo.cs
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.csproj.CoreCompileInputs.cache
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.dll
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\refint\CallLogManagement.dll
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.pdb
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\CallLogManagement.genruntimeconfig.cache
+C:\Users\yanok\Desktop\C_sharp_intro\call_log_management\CallLogManagement\CallLogManagement\obj\Debug\net6.0-windows\ref\CallLogManagement.dll
