@@ -17,16 +17,53 @@ namespace ROCKPAPERSCISSORS
             int scorePlayer = 0;
             int scoreCPU = 0;
             
-            while(scorePlayer < 3 && scoreCPU < 3)
+            bool playAgain = true;
+            while(playAgain)
             {
-                Console.WriteLine("\n=========================================");
-                Console.WriteLine("Choose between ROCK, PAPER and SCISSORS: ");
-                inputPlayer = Console.ReadLine();
-                inputPlayer = inputPlayer.ToUpper();
-                randomInt = rnd.Next(1, 4); // generate [1-3] 1 = ROCK, 2 = PAPER, 3 = SCISSORS
-                judge_winner(ref inputPlayer, randomInt, ref scorePlayer, ref scoreCPU);
+                while(scorePlayer < 3 && scoreCPU < 3)
+                {
+                    Console.WriteLine("\n=========================================");
+                    Console.WriteLine("Choose between ROCK, PAPER and SCISSORS: ");
+                    inputPlayer = Console.ReadLine();
+                    inputPlayer = inputPlayer.ToUpper();
+                    randomInt = rnd.Next(1, 4); // generate [1-3] 1 = ROCK, 2 = PAPER, 3 = SCISSORS
+                    judge_winner(ref inputPlayer, randomInt, ref scorePlayer, ref scoreCPU);
 
-                Console.WriteLine("Player: {0}  CPU: {1}", scorePlayer, scoreCPU);
+                    Console.WriteLine("Player: {0}  CPU: {1}", scorePlayer, scoreCPU);
+                }
+                if(scorePlayer == 3)
+                {
+                    Console.WriteLine("+++++Player WON!+++++");
+                }
+                else if(scoreCPU == 3)
+                {
+                    Console.WriteLine("-----CPU WON!-----");
+                }
+                else
+                {
+                    Console.WriteLine("===DRAW!===");
+                }
+                // ask if player wants to play again
+                playAgain = play_again(ref scorePlayer, ref scoreCPU);
+            }
+
+            
+        }
+        static Boolean play_again(ref int scorePlayer, ref int scoreCPU){
+            Console.WriteLine("Do you want to play again? (y/n)");
+            string input = Console.ReadLine();
+            input = input.ToUpper();
+            if(input == "Y"){
+                scorePlayer = 0;
+                scoreCPU = 0;
+                return true;
+            }
+            else if(input == "N"){
+                return false;
+            }
+            else{
+                Console.WriteLine("Invalid input. Please try again.");
+                return play_again(ref scorePlayer, ref scoreCPU);
             }
         }
         static void judge_winner(ref string inputPlayer, int inputCPU, ref int scorePlayer, ref int scoreCPU){
