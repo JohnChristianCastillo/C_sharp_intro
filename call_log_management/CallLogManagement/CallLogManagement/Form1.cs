@@ -21,14 +21,16 @@ namespace CallLogManagement
             }
             else
             {
+                
                 Connection conn = new Connection();
                 conn.data_send(@"INSERT INTO CallDetails
          (Name, FatherName, Address, MobileNumber, Date, Time, Duration, Notes, Status)
-VALUES ('"+textBox1.Text+"','"+textBox2.Text+ "','"+textBox4.Text+ "','"+textBox3.Text+ "','"+comboBox1.SelectedItem as string+ "'," +
-"'"+dateTimePicker1.Value+ "','"+textBox7.Text + "','"+textBox6.Text+ "','"+textBox5.Text+"')");
+VALUES ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox4.Text + "','" + textBox3.Text + "'," +
+"'" + dateTimePicker1.Value + "','" + textBox7.Text + "','" + textBox6.Text + "','" + textBox5.Text + "','" + comboBox1.SelectedItem + "')");
 
                 clear_entries();
-                MessageBox.Show("Saved Sucesfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // print message variable within Connection class to the message box
+                MessageBox.Show(conn.message, "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -108,6 +110,13 @@ VALUES ('"+textBox1.Text+"','"+textBox2.Text+ "','"+textBox4.Text+ "','"+textBox
                     MessageBox.Show("Please enter the phone number");
                 }
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CallLogManagement.ViewCallDetails VCD = new ViewCallDetails();
+            VCD.StartPosition = FormStartPosition.CenterParent;
+            VCD.Show();
         }
     }
 }

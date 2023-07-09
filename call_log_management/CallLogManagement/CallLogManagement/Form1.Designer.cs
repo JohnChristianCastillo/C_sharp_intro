@@ -50,13 +50,14 @@
             dateTimePicker1 = new DateTimePicker();
             label10 = new Label();
             errorProvider1 = new ErrorProvider(components);
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
             button1.Location = new Point(565, 574);
-            button1.Margin = new Padding(6, 6, 6, 6);
+            button1.Margin = new Padding(6);
             button1.Name = "button1";
             button1.Size = new Size(141, 90);
             button1.TabIndex = 0;
@@ -67,7 +68,7 @@
             // textBox1
             // 
             textBox1.Location = new Point(217, 179);
-            textBox1.Margin = new Padding(6, 6, 6, 6);
+            textBox1.Margin = new Padding(6);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(244, 39);
             textBox1.TabIndex = 1;
@@ -77,7 +78,7 @@
             // textBox2
             // 
             textBox2.Location = new Point(217, 241);
-            textBox2.Margin = new Padding(6, 6, 6, 6);
+            textBox2.Margin = new Padding(6);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(244, 39);
             textBox2.TabIndex = 2;
@@ -86,7 +87,7 @@
             // textBox4
             // 
             textBox4.Location = new Point(217, 303);
-            textBox4.Margin = new Padding(6, 6, 6, 6);
+            textBox4.Margin = new Padding(6);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(244, 39);
             textBox4.TabIndex = 3;
@@ -95,7 +96,7 @@
             // textBox5
             // 
             textBox5.Location = new Point(769, 365);
-            textBox5.Margin = new Padding(6, 6, 6, 6);
+            textBox5.Margin = new Padding(6);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(244, 39);
             textBox5.TabIndex = 8;
@@ -103,7 +104,7 @@
             // textBox6
             // 
             textBox6.Location = new Point(769, 303);
-            textBox6.Margin = new Padding(6, 6, 6, 6);
+            textBox6.Margin = new Padding(6);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(244, 39);
             textBox6.TabIndex = 7;
@@ -111,7 +112,7 @@
             // textBox7
             // 
             textBox7.Location = new Point(769, 241);
-            textBox7.Margin = new Padding(6, 6, 6, 6);
+            textBox7.Margin = new Padding(6);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(244, 39);
             textBox7.TabIndex = 6;
@@ -171,7 +172,7 @@
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Pending", "Completed" });
             comboBox1.Location = new Point(217, 497);
-            comboBox1.Margin = new Padding(6, 6, 6, 6);
+            comboBox1.Margin = new Padding(6);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(244, 40);
             comboBox1.TabIndex = 15;
@@ -221,7 +222,7 @@
             // textBox3
             // 
             textBox3.Location = new Point(217, 365);
-            textBox3.Margin = new Padding(6, 6, 6, 6);
+            textBox3.Margin = new Padding(6);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(244, 115);
@@ -231,7 +232,7 @@
             // 
             dateTimePicker1.Format = DateTimePickerFormat.Short;
             dateTimePicker1.Location = new Point(769, 179);
-            dateTimePicker1.Margin = new Padding(6, 6, 6, 6);
+            dateTimePicker1.Margin = new Padding(6);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(244, 39);
             dateTimePicker1.TabIndex = 22;
@@ -257,11 +258,23 @@
             // 
             errorProvider1.ContainerControl = this;
             // 
+            // button2
+            // 
+            button2.Location = new Point(742, 574);
+            button2.Margin = new Padding(6);
+            button2.Name = "button2";
+            button2.Size = new Size(168, 90);
+            button2.TabIndex = 24;
+            button2.Text = "ViewEntries";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1246, 681);
+            Controls.Add(button2);
             Controls.Add(label10);
             Controls.Add(dateTimePicker1);
             Controls.Add(textBox3);
@@ -282,7 +295,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(button1);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             MinimizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
@@ -316,5 +329,6 @@
         private DateTimePicker dateTimePicker1;
         private Label label10;
         private ErrorProvider errorProvider1;
+        private Button button2;
     }
 }

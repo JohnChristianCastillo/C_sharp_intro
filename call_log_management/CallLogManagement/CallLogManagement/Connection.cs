@@ -13,16 +13,19 @@ namespace CallLogManagement
         // initialize connection variable
         public SqlConnection connection;
         public SqlCommand cmd; // 
-        public SqlDataAdapter data_adapter; // forwards the communication betwen the dataset and the database
-        public string message; 
+        public SqlDataAdapter data_adapter; //sda forwards the communication betwen the dataset and the database
+        public string message;
+        private string connectionString = "Data Source=DESKTOP-IKV5FMT\\SQLEXPRESS;Initial Catalog=CallManagement;Integrated Security=True";
+
 
         // constructor
         public void _connection()
         {
             // initialize connection
-            //conn = new SqlConnection(@"Data Source=DESKTOP-5Q9O9QV\SQLEXPRESS;Initial Catalog=CallLogManagement;Integrated Security=True");
+            connection = new SqlConnection(connectionString);
+            //connection = new SqlConnection(@"Data Source=DESKTOP-5Q9O9QV\SQLEXPRESS;Initial Catalog=CallManagement;Integrated Security=True");
             // local connection
-            connection = new SqlConnection(@"Data Source=.;Initial Catalog=CallManagement;Integrated Security=True");
+            //connection = new SqlConnection(@"Data Source=.;Initial Catalog=CallManagement;Integrated Security=True");
             connection.Open();
         }
 
