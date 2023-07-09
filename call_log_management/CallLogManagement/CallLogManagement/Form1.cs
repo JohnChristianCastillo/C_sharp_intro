@@ -9,9 +9,44 @@ namespace CallLogManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                errorProvider1.Clear();
+                errorProvider1.SetError(textBox1, "Please enter the name");
+            }
+            else if (string.IsNullOrWhiteSpace(textBox4.Text))
+            {
+                errorProvider1.Clear();
+                errorProvider1.SetError(textBox4, "Please enter the phone number");
+            }
+            else
+            {
+                Connection conn = new Connection();
+                conn.data_send(@"INSERT INTO CallDetails
+         (Name, FatherName, Address, MobileNumber, Date, Time, Duration, Notes, Status)
+VALUES ('"+textBox1.Text+"','"+textBox2.Text+ "','"+textBox4.Text+ "','"+textBox3.Text+ "','"+comboBox1.SelectedItem as string+ "'," +
+"'"+dateTimePicker1.Value+ "','"+textBox7.Text + "','"+textBox6.Text+ "','"+textBox5.Text+"')");
 
+                clear_entries();
+                MessageBox.Show("Saved Sucesfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
+        // clear data fields
+        void clear_entries()
+        {
+            // get first item value in combo box
+
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            textBox7.Clear();
+            textBox6.Clear();
+            comboBox1.SelectedIndex = -1;
+            dateTimePicker1.Value = DateTime.Now;
+        }
         private void label9_Click(object sender, EventArgs e)
         {
 
@@ -41,7 +76,7 @@ namespace CallLogManagement
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if(textBox1.Text != "")
+                if (textBox1.Text != "")
                 {
                     textBox2.Focus();
                 }
@@ -56,14 +91,7 @@ namespace CallLogManagement
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if(textBox2.Text != "")
-                {
-                    textBox4.Focus();
-                }
-                else
-                {
-                    MessageBox.Show("Please fill in the Father's name");
-                }
+                textBox4.Focus();
             }
         }
 
@@ -71,7 +99,7 @@ namespace CallLogManagement
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if(textBox4.Text != "")
+                if (textBox4.Text != "")
                 {
                     textBox3.Focus();
                 }
